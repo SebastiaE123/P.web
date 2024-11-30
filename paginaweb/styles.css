@@ -1,0 +1,255 @@
+/* General */
+body {
+    font-family: 'Myriad Pro', sans-serif;
+    background-color: #FFFFFF;
+    color: #1A1413;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    background-color: #d9d9d9;
+    padding: 10px 20px;
+}
+
+.social-media img {
+    height: 35px;
+    width: auto;
+    margin-right: 10px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.social-media img:hover {
+    transform: scale(1.1);
+}
+
+.header-main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffffff;
+    padding: 10px 20px;
+}
+
+.logo img {
+    height: 80px;
+}
+
+/* Menú principal */
+.main-menu ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    gap: 20px;
+}
+
+.main-menu ul li a {
+    background-color: #808185;
+    color: #F8E9D4;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 14px;
+    transition: background-color 0.3s, transform 0.2s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.main-menu ul li a:hover {
+    background-color: #6D100A;
+    transform: translateY(-3px);
+}
+
+.main-menu ul li a:active {
+    background-color: #5A0807;
+    transform: translateY(1px);
+}
+
+/* Noticias */
+.news {
+    padding: 20px;
+}
+
+.news-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.news-item {
+    background-color: #F8E9D4;
+    border: 1px solid #C3D730;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    background-color: #C3D730;
+    color: #1A1413;
+    text-align: center;
+    padding: 20px;
+}
+
+.footer-columns {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    text-align: left;
+}
+
+.footer-columns ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Login */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.login-form {
+    background-color: #F0F0F0;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 400px;
+    max-width: 90%;
+}
+
+.login-form h2 {
+    margin-bottom: 20px;
+    color: #1A1413;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+    width: 90%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #C3D730;
+    font-size: 16px;
+}
+
+.login-form input[type="submit"] {
+    background-color: #C3D730;
+    color: #FFFFFF;
+    font-weight: bold;
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.login-form input[type="submit"]:hover {
+    background-color: #6D100A;
+}
+
+/* Registro */
+.registro-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.registro-form {
+    background-color: #F0F0F0;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 400px;
+    max-width: 90%;
+}
+
+.registro-form h2 {
+    margin-bottom: 20px;
+    color: #1A1413;
+}
+
+.registro-form input[type="email"],
+.registro-form input[type="password"] {
+    width: 90%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #C3D730;
+    font-size: 16px;
+}
+
+.registro-form input[type="submit"] {
+    background-color: #C3D730;
+    color: #FFFFFF;
+    font-weight: bold;
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.registro-form input[type="submit"]:hover {
+    background-color: #6D100A;
+}
+
+/* Estilos generales para el registro exitoso */
+.registro-exitoso-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #FFFFFF;
+    color: #1A1413;
+    font-family: 'Myriad Pro', sans-serif;
+    text-align: center;
+    padding: 20px;
+}
+
+.registro-exitoso-container h1 {
+    font-size: 28px;
+    color: #6D100A;
+    margin-bottom: 20px;
+}
+
+.registro-exitoso-container p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.registro-exitoso-container a {
+    background-color: #C3D730;
+    color: #1A1413;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.2s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.registro-exitoso-container a:hover {
+    background-color: #6D100A;
+    transform: translateY(-3px);
+}
+
+.registro-exitoso-container a:active {
+    background-color: #5A0807;
+    transform: translateY(1px);
+}
